@@ -10,3 +10,12 @@ function changeSection(section) {
   currentSection.textContent = section;
   menu.style.display = "none";
 }
+
+// Toggle FAQ answers visibility when clicked
+document.querySelectorAll('.faq-question').forEach((question) => {
+    question.addEventListener('click', () => {
+      const faqItem = question.closest('.faq-item');
+      faqItem.classList.toggle('active');
+    });
+  });
+  

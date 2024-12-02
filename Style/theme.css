@@ -70,4 +70,8 @@ body{
 
 .dropdown a:hover {
     background-color: var(--misc);
-  }
+}
+
+.faq-question:hover {
+    color: var(--misc);
+}

@@ -22,6 +22,28 @@ font-size: 24px;
 margin: 0;
 user-select: none;
 }  
+
+
+.section-block {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    
+  }
+  
+  .section-block h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .section-block p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+
 .navbar {
 position: fixed;
 bottom: 20px;
@@ -69,3 +91,138 @@ color: white;
 text-decoration: none;
 padding: 10px 20px;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+  
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+  
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+#faqs{
+    margin-bottom: 55px;
+}
+
+/* FAQ Section */
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+  
+  /* Individual FAQ Item */
+.faq-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    color: #333;
+}
+  
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+  
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+  /* Achievements Section */
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.achievement-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.achievement-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+  
+.achievement-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+  
+ /* Levels Section */
+#levels {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  #levels h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  #levels ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  #levels p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+#levels h2{
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    font-weight: 600;
+  }
+  
+  
+  #home p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
