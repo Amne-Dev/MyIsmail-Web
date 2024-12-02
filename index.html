@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style/theme.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Moulay Ismail High shcool</title>
+</head>
+
+<header class="header">
+    <img src="https://raw.githubusercontent.com/Amne-Dev/MyIsmail-Web/refs/heads/main/Images/299214068_488961346562688_7481375062274533520_n__1_-removebg-preview.png" 
+         alt="Logo" 
+         class="logo">
+    <h1 class="title">Moulay Ismail HS</h1>
+  </header>
+
+<body>
+    <div class="content">
+        <section class="our-goal">
+      <h2>Our Goal</h2>
+      <p>
+        At Moulay Ismail High School, our goal is to provide students with a nurturing environment that fosters academic excellence, critical thinking, and personal growth. 
+        We strive to empower students with the knowledge and skills they need to thrive in a rapidly changing world, while promoting values of integrity, respect, and community service.
+      </p>
+    </section>
+    </div>
+    
+    <!-- Floating Navbar -->
+    <div class="navbar">
+      <span id="current-section">Home</span>
+      <button id="menu-toggle" class="hamburger">
+        ☰
+      </button>
+      <div id="menu" class="dropdown">
+        <a href="#" onclick="changeSection('Home')">Home</a>
+        <a href="#" onclick="changeSection('Achievements')">Achievements</a>
+        <a href="#" onclick="changeSection('Levels')">Levels</a>
+        <a href="#" onclick="changeSection('Contact')">Contact</a>
+        <a href="#" onclick="changeSection('FAQs')">FAQs</a>
+      </div>
+    </div>
+  
+  </body>
+<script src="Script/Home.js"></script>
+</html>
