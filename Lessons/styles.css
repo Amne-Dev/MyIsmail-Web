@@ -1,4 +1,3 @@
-/* General Styling */
 body {
     background-color: var(--bg-main);
     color: var(--text-main);
@@ -30,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2vh 0;
-    border-left: 1px solid var(--text-sec);
+    border-left: 1px solid var (--text-sec);
 }
 
 .sidebar button {
@@ -74,12 +73,20 @@ body {
 }
 
 /* Selection Buttons */
+#subject-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
 #subject-buttons button, #lesson-buttons button {
     color: #ffffff;
     font-weight: bold;
     transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: var(--misc);
     border: none;
+    height: 5vh;
+    font-size: 1.5rem;
 }
 
 #subject-buttons button:hover, #lesson-buttons button:hover {
@@ -144,6 +151,10 @@ body {
         width: auto;
     }
 
+    #subject-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #subject-buttons button, #lesson-buttons button {
         font-size: 1.5rem;
     }
@@ -154,6 +165,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    #subject-buttons {
+        grid-template-columns: 1fr;
+    }
+
     #subject-buttons button, #lesson-buttons button {
         font-size: 1.2rem;
     }
