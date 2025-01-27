@@ -51,7 +51,7 @@ body {
 }
 
 .logo p {
-  color: var(--text-sec);
+  color: var(--text-main);
 }
 
 /* Sidebar Styling */
@@ -92,9 +92,11 @@ body {
   bottom: 2vh;
   right: 1.5vh;
 }
+
 /* Slideshow Styling */
 .carousel-inner img {
   height: 50vh;
+  width: 120vw;
   object-fit: cover;
 }
 
@@ -180,6 +182,9 @@ body {
   display: flex;
 }
 
+.container-fluid{
+  margin-left: 5vw;
+}
 /* Media Queries */
 @media (max-width: 768px) {
   .sidebar {
