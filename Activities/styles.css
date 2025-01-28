@@ -25,6 +25,7 @@
 .card-body {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 .card-body .w-50 {
     width: 50%;
@@ -33,12 +34,29 @@
     width: 33%;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--misc);
     border: none;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--misc-sec);
     border: none;
+}
+
+.dsc {
+    padding-top: 5rem;
+    padding-left: -1rem;
+}
+
+.student-name {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.date {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    color: var(--text-sec);
 }
